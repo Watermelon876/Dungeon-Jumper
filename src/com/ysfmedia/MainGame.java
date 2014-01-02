@@ -100,11 +100,11 @@ public class MainGame extends Applet implements Runnable, KeyListener {
 			
 			//Tilesets are used so that I don't have to store 16 to 24 images in memory. Otherwise, it would be cumbersome to work with.
 			
-			if (tileset.getHeight(null) == -1) {
+			//if (tileset.getHeight(null) == -1) {
 				//throw new Exception("Image could not be loaded.") ;
 				//Note: At this point, the image is still loading which is the height is -1. This try/catch statement is just to make sure nothing is done with the image until it loads.
 				//In future iterations, there may be some kind of a loading screen implemented
-			}
+			//}
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -122,9 +122,9 @@ public class MainGame extends Applet implements Runnable, KeyListener {
 			Image temp= getImage(doc_url, "Resources/PlayerSprite.png");
 			player= new PlayerClass(temp,x,y);
 			
-			if (temp.getHeight(null) == -1) {
+			//if (temp.getHeight(null) == -1) {
 				//throw new Exception("Image could not be loaded.") ;
-			}
+			//}
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
